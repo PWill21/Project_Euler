@@ -11,5 +11,7 @@ def add (n)
 	end
 end
 
-add(10)
-
+puts "How many Fibonacci Numbers would you like to find?"
+number_of_fibs = gets
+puts
+add(number_of_fibs.to_i)
