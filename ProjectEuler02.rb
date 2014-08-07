@@ -1,7 +1,7 @@
 def add (n)
 	first_number = 1
 	second_number = 2
-	fib_number = 0
+	fib_number = 0	
 	puts second_number
 	continue = true
 	while continue
@@ -22,6 +22,6 @@ def add (n)
 end
 
 puts "What is the maximum Fibonacci value?"
-max_fig = gets
+max_fib = gets
 puts
-add(max_fig.to_i)
+add(max_fib.to_i)
