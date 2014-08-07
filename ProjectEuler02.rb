@@ -2,15 +2,19 @@ def add (n)
 	first_number = 1
 	second_number = 2
 	fib_number = 0
-	puts first_number
 	puts second_number
 	continue = true
 	while continue
 		fib_number = first_number + second_number
 		if fib_number < n
-			puts fib_number
-			first_number = second_number
-			second_number = fib_number
+			if fib_number.even?
+				puts fib_number
+				first_number = second_number
+				second_number = fib_number
+			else
+				first_number = second_number
+				second_number = fib_number
+			end
 		else
 			continue = false			
 		end
