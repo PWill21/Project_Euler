@@ -3,7 +3,7 @@ number = gets.to_i
 primes = []
 require 'prime'
 number.times do |i|
-	if Prime.prime?(i)
+	if Prime.prime?(i) && number % i == 0
 		primes.push(i)
 		i+1
 	end
