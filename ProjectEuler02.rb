@@ -2,6 +2,7 @@ def add (n)
 	first_number = 1
 	second_number = 2
 	fib_number = 0	
+	even_fibs = [2]
 	puts second_number
 	continue = true
 	while continue
@@ -9,6 +10,7 @@ def add (n)
 		if fib_number < n
 			if fib_number.even?
 				puts fib_number
+				even_fibs.push(fib_number)
 				first_number = second_number
 				second_number = fib_number
 			else
@@ -19,9 +21,11 @@ def add (n)
 			continue = false			
 		end
 	end
+	puts even_fibs
 end
 
 puts "What is the maximum Fibonacci value?"
 max_fib = gets
 puts
 add(max_fib.to_i)
+
