@@ -30,4 +30,3 @@ max_fib = gets
 puts
 findEvenFibs(max_fib.to_i)
 
-
