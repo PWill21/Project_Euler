@@ -1,4 +1,4 @@
-def add (n)
+def findEvenFibs (n)
 	first_number = 1
 	second_number = 2
 	fib_number = 0	
@@ -9,7 +9,6 @@ def add (n)
 		fib_number = first_number + second_number
 		if fib_number < n
 			if fib_number.even?
-				puts fib_number
 				even_fibs.push(fib_number)
 				first_number = second_number
 				second_number = fib_number
@@ -27,5 +26,5 @@ end
 puts "What is the maximum Fibonacci value?"
 max_fib = gets
 puts
-add(max_fib.to_i)
+findEvenFibs(max_fib.to_i)
 
