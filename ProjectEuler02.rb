@@ -20,10 +20,14 @@ def findEvenFibs (n)
 		end
 	end
 	puts even_fibs
+	puts even_fibs.inject(0) { |sum, element| sum + element}
 end
+
+
 
 puts "What is the maximum Fibonacci value?"
 max_fib = gets
 puts
 findEvenFibs(max_fib.to_i)
+
 
