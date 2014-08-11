@@ -3,7 +3,6 @@ def findEvenFibs (n)
 	second_number = 2
 	fib_number = 0	
 	even_fibs = [2]
-	puts second_number
 	continue = true
 	while continue
 		fib_number = first_number + second_number
